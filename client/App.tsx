@@ -11,7 +11,6 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
-let appRendered = false;
 
 const App = () => {
   useEffect(() => {
@@ -36,6 +35,6 @@ const App = () => {
 };
 
 const rootElement = document.getElementById("root");
-if (rootElement && !rootElement.__reactRootContainer) {
+if (rootElement && rootElement.childNodes.length === 0) {
   createRoot(rootElement).render(<App />);
 }

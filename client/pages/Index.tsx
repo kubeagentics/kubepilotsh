@@ -11,8 +11,8 @@ export default function Index() {
     <div className="bg-zinc-900">
       <Hero />
       <USPSection />
-      <ScreenshotCarousel />
       <FeaturesGrid />
+      <ScreenshotCarousel />
       <ComparisonTable />
       <DownloadSection />
       <Footer />

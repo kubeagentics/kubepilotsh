@@ -10,14 +10,14 @@ export default function DownloadSection() {
       color: "text-gray-300",
     },
     {
-      icon: Windows,
+      icon: Monitor,
       name: "Windows",
       versions: ["Windows 10+", "64-bit"],
       format: ".exe / .msi",
       color: "text-sky-400/60",
     },
     {
-      icon: Linux,
+      icon: Cpu,
       name: "Linux",
       versions: ["Ubuntu 20.04+", "Debian"],
       format: ".AppImage / .deb",

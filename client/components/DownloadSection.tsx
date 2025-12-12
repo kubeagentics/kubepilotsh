@@ -1,4 +1,4 @@
-import { Apple, Windows, Linux, Download } from "lucide-react";
+import { Apple, Download, Monitor, Cpu } from "lucide-react";
 
 export default function DownloadSection() {
   const platforms = [

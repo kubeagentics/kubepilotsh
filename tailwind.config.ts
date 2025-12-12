@@ -57,6 +57,12 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        sky: {
+          400: "#38BDF8",
+        },
+        orange: {
+          700: "#C2410C",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",

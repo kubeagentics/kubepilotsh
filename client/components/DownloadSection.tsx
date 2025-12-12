@@ -28,9 +28,12 @@ export default function DownloadSection() {
   return (
     <section className="bg-zinc-900 text-white py-20 border-t border-blue-800/30">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-4 text-center">Download KubePilot CE</h2>
+        <h2 className="text-4xl font-bold mb-4 text-center">
+          Download KubePilot CE
+        </h2>
         <p className="text-gray-400 text-center mb-12">
-          Choose your platform below. All versions are free and include full features.
+          Choose your platform below. All versions are free and include full
+          features.
         </p>
 
         <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -48,7 +51,9 @@ export default function DownloadSection() {
                     <div key={i}>{v}</div>
                   ))}
                 </div>
-                <p className="text-orange-700 font-mono text-sm mb-6">{platform.format}</p>
+                <p className="text-orange-700 font-mono text-sm mb-6">
+                  {platform.format}
+                </p>
                 <div className="flex flex-col items-center gap-3">
                   <a
                     href="https://github.com/opsflow/kubepilot/releases"

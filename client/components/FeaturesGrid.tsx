@@ -80,7 +80,9 @@ export default function FeaturesGrid() {
   return (
     <section className="bg-zinc-900 text-white py-20 border-t border-blue-800/30">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-12 text-center">Core Features (All Free)</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">
+          Core Features (All Free)
+        </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => {
@@ -94,7 +96,9 @@ export default function FeaturesGrid() {
                   <Icon className="w-6 h-6 text-sky-400/60 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold mb-1">{feature.name}</h3>
-                    <p className="text-gray-400 text-sm">{feature.description}</p>
+                    <p className="text-gray-400 text-sm">
+                      {feature.description}
+                    </p>
                   </div>
                 </div>
               </div>

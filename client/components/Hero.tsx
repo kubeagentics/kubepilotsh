@@ -15,7 +15,8 @@ export default function Hero() {
               AI-Powered Kubernetes Desktop Companion
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              Debug Kubernetes 10x faster with built-in AI diagnostics, root cause analysis, and proactive health scanning.
+              Debug Kubernetes 10x faster with built-in AI diagnostics, root
+              cause analysis, and proactive health scanning.
             </p>
           </div>
 

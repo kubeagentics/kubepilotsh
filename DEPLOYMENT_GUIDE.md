@@ -5,6 +5,7 @@ Your production-ready landing page for KubePilot CE has been created and is read
 ## 📋 What's Included
 
 ### Pages & Sections
+
 - ✅ **Hero Section** - Bold headline with dual CTAs (Download / GitHub)
 - ✅ **USP Highlights** - 6 key features with icons and descriptions
 - ✅ **Features Grid** - 12 comprehensive feature cards (all free)
@@ -13,6 +14,7 @@ Your production-ready landing page for KubePilot CE has been created and is read
 - ✅ **Footer** - Community links, resources, social media
 
 ### Design & Styling
+
 - ✅ **Dark theme** - Zinc-900 background (#18181b)
 - ✅ **Color scheme** - Sky-400 buttons (#38BDF8), Orange-700 accents (#C2410C)
 - ✅ **Blue cards** - Blue-900/20 with blue-800 borders
@@ -20,6 +22,7 @@ Your production-ready landing page for KubePilot CE has been created and is read
 - ✅ **Fast** - Optimized bundle size, minimal dependencies
 
 ### CI/CD
+
 - ✅ **GitHub Actions Workflow** - Automatic build and deploy on push to main
 - ✅ **Type-safe** - Full TypeScript compilation
 - ✅ **Production build** - Minified, tree-shaken code
@@ -35,6 +38,7 @@ Your production-ready landing page for KubePilot CE has been created and is read
    - Clone to your machine
 
 2. **Add This Project to Your Repo**
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/kubepilot.git
    cd kubepilot
@@ -98,6 +102,7 @@ Your production-ready landing page for KubePilot CE has been created and is read
 ## 🔧 Local Development
 
 ### Prerequisites
+
 ```bash
 # Node 18+ required
 node --version
@@ -110,6 +115,7 @@ brew install pnpm
 ```
 
 ### Development Server
+
 ```bash
 # Install dependencies
 pnpm install
@@ -121,6 +127,7 @@ pnpm dev
 ```
 
 ### Build for Production
+
 ```bash
 # Build client (static site)
 pnpm build:client
@@ -167,46 +174,47 @@ kubepilot-landing/
 ## 🎨 Customization
 
 ### Change Colors
+
 Edit `client/global.css` and `tailwind.config.ts`:
 
 ```css
 /* In global.css, update HSL values */
 :root {
-  --background: 240 10% 11%;      /* Zinc-900 */
-  --primary: 200 98% 77%;         /* Sky-400 */
-  --accent: 18 87% 38%;           /* Orange-700 */
-  --card: 217 67% 11%;            /* Blue-900/20 */
+  --background: 240 10% 11%; /* Zinc-900 */
+  --primary: 200 98% 77%; /* Sky-400 */
+  --accent: 18 87% 38%; /* Orange-700 */
+  --card: 217 67% 11%; /* Blue-900/20 */
 }
 ```
 
 ### Update Links
+
 Edit component files:
 
 ```tsx
 // Download links
-href="https://github.com/opsflow/kubepilot/releases"
+href = "https://github.com/opsflow/kubepilot/releases";
 
 // GitHub repo
-href="https://github.com/opsflow/kubepilot"
+href = "https://github.com/opsflow/kubepilot";
 
 // Documentation
-href="https://docs.kubepilot.sh"
+href = "https://docs.kubepilot.sh";
 
 // Discord
-href="https://discord.gg/kubepilot"
+href = "https://discord.gg/kubepilot";
 ```
 
 ### Add Screenshots
+
 Replace image URLs in `Hero.tsx` and `USPSection.tsx`:
 
 ```tsx
-<img
-  src="YOUR_SCREENSHOT_URL"
-  alt="Feature description"
-/>
+<img src="YOUR_SCREENSHOT_URL" alt="Feature description" />
 ```
 
 ### Change Fonts
+
 Edit `client/global.css`:
 
 ```css
@@ -249,6 +257,7 @@ dist/spa/
 ## 🛠️ Troubleshooting
 
 ### Build fails with TypeScript errors
+
 ```bash
 pnpm typecheck
 # Fix errors reported
@@ -258,15 +267,18 @@ pnpm build:client
 ```
 
 ### GitHub Actions workflow not running
+
 - Check: repo → Settings → Actions → General
 - Ensure "Allow all actions and reusable workflows" is selected
 
 ### Custom domain not resolving
+
 - Wait 24 hours for DNS propagation
 - Verify DNS records at: https://mxtoolbox.com/
 - Check GitHub Pages settings in repo
 
 ### Page not updating after push
+
 - Force reload: Ctrl+Shift+R (or Cmd+Shift+R on Mac)
 - Clear browser cache
 - Check GitHub Actions workflow status
@@ -278,6 +290,7 @@ This landing page is open source and follows the same license as KubePilot CE (A
 ## ❓ Questions?
 
 For issues with deployment or customization, check:
+
 - GitHub Actions logs in your repo
 - GitHub Pages documentation
 - KubePilot repository discussions

@@ -49,16 +49,24 @@ export default function ComparisonTable() {
   return (
     <section className="bg-zinc-900 text-white py-20 border-t border-blue-800/30">
       <div className="max-w-7xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-12 text-center">How KubePilot Compares</h2>
+        <h2 className="text-4xl font-bold mb-12 text-center">
+          How KubePilot Compares
+        </h2>
 
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead>
               <tr className="border-b border-blue-800/50">
                 <th className="text-left py-4 px-6 font-semibold">Feature</th>
-                <th className="text-center py-4 px-6 font-semibold text-sky-400/60">KubePilot CE</th>
-                <th className="text-center py-4 px-6 font-semibold text-gray-400">K9s</th>
-                <th className="text-center py-4 px-6 font-semibold text-gray-400">Lens</th>
+                <th className="text-center py-4 px-6 font-semibold text-sky-400/60">
+                  KubePilot CE
+                </th>
+                <th className="text-center py-4 px-6 font-semibold text-gray-400">
+                  K9s
+                </th>
+                <th className="text-center py-4 px-6 font-semibold text-gray-400">
+                  Lens
+                </th>
               </tr>
             </thead>
             <tbody>

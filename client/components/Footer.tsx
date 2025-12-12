@@ -119,14 +119,18 @@ export default function Footer() {
               <li>Tauri (Rust + React)</li>
               <li>TypeScript</li>
               <li>KubeAgentics Framework</li>
-              <li className="mt-4 text-orange-700 font-semibold">Apache 2.0 Licensed</li>
+              <li className="mt-4 text-orange-700 font-semibold">
+                Apache 2.0 Licensed
+              </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-blue-800/30 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-400 text-sm">© 2025 OpsFlow. KubePilot Community Edition.</p>
+            <p className="text-gray-400 text-sm">
+              © 2025 OpsFlow. KubePilot Community Edition.
+            </p>
 
             <div className="flex gap-4">
               <a

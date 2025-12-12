@@ -133,7 +133,14 @@ export default function ScreenshotCarousel() {
 
       {/* Full-screen carousel modal */}
       {isOpen && (
-        <div className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4">
+        <div
+          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setIsOpen(false);
+            }
+          }}
+        >
           <div className="w-full max-w-4xl">
             {/* Header */}
             <div className="flex justify-between items-center mb-6">

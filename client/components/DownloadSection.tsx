@@ -49,15 +49,20 @@ export default function DownloadSection() {
                   ))}
                 </div>
                 <p className="text-orange-700 font-mono text-sm mb-6">{platform.format}</p>
-                <a
-                  href="https://github.com/opsflow/kubepilot/releases"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-sky-400/60 hover:bg-sky-400/80 text-black font-semibold px-6 py-2 rounded-lg transition-colors"
-                >
-                  <Download className="w-4 h-4" />
-                  Download
-                </a>
+                <div className="flex flex-col items-center gap-3">
+                  <a
+                    href="https://github.com/opsflow/kubepilot/releases"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-sky-400/60 hover:bg-sky-400/80 text-black font-semibold px-6 py-2 rounded-lg transition-colors"
+                  >
+                    <Download className="w-4 h-4" />
+                    Download
+                  </a>
+                  <span className="text-xs text-gray-500 bg-gray-800/30 px-3 py-1 rounded-full">
+                    Coming Soon
+                  </span>
+                </div>
               </div>
             );
           })}

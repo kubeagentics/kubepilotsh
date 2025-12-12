@@ -159,9 +159,10 @@ export default function ScreenshotCarousel() {
             </div>
 
             {/* Navigation */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-4">
               <button
                 onClick={prevSlide}
+                title="Previous (or press ←)"
                 className="flex items-center gap-2 bg-blue-900/20 border border-blue-800/50 hover:border-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
               >
                 <ChevronLeft className="w-5 h-5" />
@@ -184,10 +185,14 @@ export default function ScreenshotCarousel() {
                     />
                   ))}
                 </div>
+                <p className="text-gray-500 text-xs mt-3">
+                  Press <kbd className="bg-blue-900/40 px-2 py-1 rounded text-sky-400/60">ESC</kbd> to close • <kbd className="bg-blue-900/40 px-2 py-1 rounded text-sky-400/60">←→</kbd> to browse
+                </p>
               </div>
 
               <button
                 onClick={nextSlide}
+                title="Next (or press →)"
                 className="flex items-center gap-2 bg-blue-900/20 border border-blue-800/50 hover:border-blue-600 text-white px-4 py-2 rounded-lg transition-colors"
               >
                 Next
